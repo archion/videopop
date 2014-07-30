@@ -1,6 +1,7 @@
-(function(){curl=window.location.href;
-	if (curl.search(/bilibili/)>0){
-		nurl="http://static.hdslb.com/miniloader.swf?aid="+curl.match(/\d+/g)+"&page=1";
+(function(){
+	ht=window.location.host;
+	if (ht.search(/bilibili/)>0){
+		nurl="http://static.hdslb.com/miniloader.swf?aid="+window.location.pathname.match(/\d+/g)+"&page=1";
 	}else{
 		nurl=document.getElementsByTagName("embed")[0].getAttribute("src");
 	}
