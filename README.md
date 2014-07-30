@@ -3,6 +3,7 @@ videopop
 pop online video out on the website, currently supports:
 - bilibili
 - youku
+- tudou
 - other website with video embed by "embed" tag
 
 ## Usage
