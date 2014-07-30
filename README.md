@@ -5,7 +5,7 @@ pop online video out on the website, currently supports:
 - youku
 - other website with video embed by "embed" tag
 
-# Usage
+## Usage
 Add 
 ```
 javascript:(function(){var vp=document.createElement('script');vp.setAttribute('src','https://rawgit.com/archion/videopop/master/videopop.js');document.getElementsByTagName('head')[0].appendChild(vp);})();
