@@ -8,6 +8,8 @@
 		nurl="http://www.tudou.com/v/"+window.location.pathname.match(/\w+/g)[2]+"/v.swf";
 	}else if (ht.search(/youtube/)>0){
 		nurl="https://www.youtube.com/embed/"+window.location.href.match(/\w+/g)[6];
+	}else if (ht.search(/acfun/)>0){
+		nurl="http://static.acfun.tv/player/ACFlashPlayer.out.swf?type=page&url="+window.location.href;
 	}else{
 		nurl=document.getElementsByTagName("embed")[0].getAttribute("src");
 		document.getElementsByTagName("embed")[0].parentNode.removeChild(document.getElementsByTagName("embed")[0]);
