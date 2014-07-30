@@ -12,5 +12,5 @@
 		nurl=document.getElementsByTagName("embed")[0].getAttribute("src");
 		document.getElementsByTagName("embed")[0].parentNode.removeChild(document.getElementsByTagName("embed")[0]);
 	}
-	window.open(nurl,"","width=520,height=330");
+	window.open(nurl,"","width=520,height=325");
 })();
