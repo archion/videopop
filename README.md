@@ -1,6 +1,7 @@
 videopop
 ========
 pop online video out on the website, currently supports:
+- youtube
 - bilibili
 - youku
 - tudou
