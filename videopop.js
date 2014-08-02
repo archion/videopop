@@ -5,7 +5,7 @@
 	if (ht.search(/bilibili/)>0){
 		nurl="http://static.hdslb.com/miniloader.swf?aid="+ht.match(/\d+/g)+"&page=1";
 	}else if (ht.search(/youku/)>0){
-		nurl="http://player.youku.com/player.php/Type/Folder/Fid/Ob/1/sid/"+ht.match(/id_\w+/g)[0].substr(3)+"/v.swf";
+		nurl="http://player.youku.com/player.php/sid/"+ht.match(/id_\w+/g)[0].substr(3)+"/v.swf";
 	}else if (ht.search(/tudou/)>0){
 		nurl="http://www.tudou.com/v/"+ht.match(/\w+/g)[6]+"/v.swf";
 	}else if (ht.search(/youtube/)>0){
