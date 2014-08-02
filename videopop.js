@@ -1,7 +1,7 @@
 (function(){
 	//ht=window.location.host;
-	ht=document.URL
-	tt=document.title
+	setTimeout(ht=document.URL,1000);
+	tt=document.title;
 	if (ht.search(/bilibili/)>0){
 		nurl="http://static.hdslb.com/miniloader.swf?aid="+ht.match(/\d+/g)+"&page=1";
 	}else if (ht.search(/youku/)>0){
