@@ -1,6 +1,6 @@
 (function(){
 	//ht=window.location.host;
-	setTimeout(ht=document.URL,1000);
+	setTimeout(function(){ht=document.URL;},1000);
 	tt=document.title;
 	if (ht.search(/bilibili/)>0){
 		nurl="http://static.hdslb.com/miniloader.swf?aid="+ht.match(/\d+/g)+"&page=1";
