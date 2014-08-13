@@ -1,6 +1,8 @@
 videopop
 ========
-Pop online video out on the website. Should be able to support all website
+Pop online video out on the website. Should be able to support all website.
+
+Only test on chrome
 
 ## Setup
 Just add 
