@@ -1,17 +1,13 @@
 videopop
 ========
-pop online video out on the website, currently supports:
-- youtube
-- bilibili
-- acfun
-- youku
-- tudou
-- other website with video embed by "embed" tag
+Pop online video out on the website. Should be able to support all website
 
-## Usage
-Add 
+## installing
+Just add 
 ```
 javascript:(function(){var vp=document.createElement('script');vp.setAttribute('src','https://rawgit.com/archion/videopop/master/videopop.js');document.getElementsByTagName('head')[0].appendChild(vp);})();
 ```
+to your browser as bookmark
 
-to your chrome browser bookmark
+## Usage
+click the bookmark on a website and then click the video which you want to pop out
