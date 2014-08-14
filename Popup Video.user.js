@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name       Popout Video
+// @name       Popup Video
 // @namespace  https://github.com/archion/
 // @version    0.1
-// @description  Pop online video out of the website
+// @description  Popup online video out of the website
 // @match      http://*/*
 // @match      https://*/*
 // @copyright  2014+, archion

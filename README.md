@@ -1,6 +1,6 @@
 videopop
 ========
-Pop online video out of the website. Should be able to support all website.
+Popup online video out of the website. Should be able to support all website.
 
 Only test on chrome
 
@@ -13,10 +13,10 @@ javascript:(function(){var vp=document.createElement('script');vp.setAttribute('
 ```
 to your browser as bookmark
 ### as userscript
-[see here](https://greasyfork.org/scripts/4218-popout-video)
+[see here](https://greasyfork.org/scripts/4218-popup-video)
 
 ## Usage
-click the bookmark on a website and then click the video which you want to pop out
+click the bookmark on a website and then click the video which you want to popup
 
 ---
 Any contribution as well as bug reports will be appreciated.  
