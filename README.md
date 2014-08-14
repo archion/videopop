@@ -13,7 +13,7 @@ javascript:(function(){var vp=document.createElement('script');vp.setAttribute('
 ```
 to your browser as bookmark
 ### as userscript
-[see here](https://greasyfork.org/scripts/4217-popout-video)
+[see here](https://greasyfork.org/scripts/4218-popout-video)
 
 ## Usage
 click the bookmark on a website and then click the video which you want to pop out
