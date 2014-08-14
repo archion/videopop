@@ -2,7 +2,7 @@ videopop
 ========
 Popup online video out of the website. Should be able to support all website.
 
-Only test on chrome
+Only tested in chrome
 
 ## Setup
 There is two way to use this script, and the second one is recommended.
