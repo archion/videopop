@@ -16,7 +16,9 @@ to your browser as bookmark
 [see here](https://greasyfork.org/scripts/4218-popup-video)
 
 ## Usage
-click the bookmark on a website and then click the video which you want to popup
+If use bookmarklet, click the bookmark on a website and then click the video which you want to popup
+
+If use userscript, click the "popup" button in bottom right of the page and then the same as bookmarklet
 
 ---
 Any contribution as well as bug reports will be appreciated.  
