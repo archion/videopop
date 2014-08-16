@@ -1,11 +1,16 @@
 videopop
 ========
-Popup online video out of the website. Should be able to support all website.
+Popup online video out of the website. I will work hard to make it support all sites.
+
+currently known unsupported website
+- youtube html player
+- acfun external player
+- ...
 
 Only tested in chrome
 
 ## Setup
-There is two way to use this script, and the second one is recommended.
+There is two way to use this script. Since bookmarklet will affected by CSP,so the second one is recommended.
 ### as bookmarklet
 Just add 
 ```
