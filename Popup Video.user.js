@@ -8,13 +8,10 @@
 // @match      https://*/*
 // @copyright  2014+, archion
 // ==/UserScript==
-if (window.top != window.self)  //don't run on frames or iframes
-{
-    return;
-}
+if (window.top != window.self) { return; }  //don't run on frames or iframes
 var ck=document.createElement("div");
-ck.setAttribute("style","position: fixed; bottom: 20px; right: 20px;z-index: 999999;background: #000; opacity: 0.6;font-size: 8pt;text-align: center;color:#fff;padding: 4px");
-ck.innerHTML="<a href='#non' style='color:#fff;text-decoration:none;'>Popup</a>";
+ck.setAttribute("style","position: fixed; bottom: 20px; right: 20px;z-index: 999999;background: #000; opacity: 0.6;color:#fff;font-size: 8pt;cursor: pointer;text-align: center;color:#fff;padding: 4px");
+ck.innerHTML="Popup";
 document.body.appendChild(ck);
 ck.addEventListener('click', function() {
 	//var flash=document.querySelectorAll("object[type='application/x-shockwave-flash']");
