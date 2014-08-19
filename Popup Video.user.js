@@ -2,7 +2,7 @@
 // @name       Popup Video
 // @homepageURL https://github.com/archion/videopop
 // @namespace  https://github.com/archion/
-// @version    0.1.4
+// @version    0.1.5
 // @description  Popup online video out of the webpage
 // @match      http://*/*
 // @match      https://*/*
@@ -43,35 +43,42 @@ ck.addEventListener('click', function() {
 			if(!w){
 				window.alert("Please set to allow pop-up windows（请设置允许弹出窗口）");
 			}else{
-				//window.onload doesn't work fine on chrome, so try setTimeout
-				//w.window.onload=function(){
-				w.window.onload=setTimeout(function(){
-					w.document.documentElement.replaceChild(document.head.cloneNode(true),w.document.head);
-					//w.document.documentElement.replaceChild(document.body.cloneNode(true),w.document.body);
-					//var s = document.createElement('style');
-					//s.type = 'text/css';
-					//s.innerHTML = 'div { display: none; }';
-					//w.document.head.appendChild(s);
-					//target.setAttribute("style","height: 100%; width: 100%; left: 0px; top: 0px;")
-					target.style.height="100%";
-					target.style.width="100%";
-					target.style.top="0px";
-					target.style.left="0px";
-					target.style.margin="0px";
-					target.style.padding="0px";
-					w.document.body.setAttribute("style","height: 100%; width: 100%;margin: 0px;min-width:90%;min-height:90%; left: 0px; top: 0px;");
-					//w.document.body.removeAttribute("class");
-					//var d=document.createElement("div");
-					//d.setAttribute("style","height: 100%; width: 100%; left: 0px; top: 0px;display: block;");
-					//d.appendChild(target);
-					////var js=document.querySelectorAll("script");
-					////for (var i=0, len=js.length; i<len ;i++){
-					////d.appendChild(js[i]);
-					////}
-					//w.document.body.appendChild(d);
-					w.document.body.appendChild(target);
-					//}
-			},500);
+				w.window.location.href=window.location.href;
+				var id=window.setInterval(function(){
+					if(w.window.location.hostname==window.location.hostname){
+						window.clearInterval(id);
+						w.document.write('<script type="text/undefined">');
+						//w.document.documentElement.replaceChild(document.head.cloneNode(true),w.document.head);
+						w.document.head.parentNode.appendChild(document.createElement("body"));
+						//w.document.documentElement.replaceChild(document.body.cloneNode(true),w.document.body);
+						//var s = document.createElement('style');
+						//s.type = 'text/css';
+						//s.innerHTML = 'div { display: none; }';
+						//w.document.head.appendChild(s);
+						//target.setAttribute("style","height: 100%; width: 100%; left: 0px; top: 0px;")
+						target.style.height="100%";
+						target.style.width="100%";
+						target.style.top="0px";
+						target.style.left="0px";
+						target.style.margin="0px";
+						target.style.padding="0px";
+						w.document.body.setAttribute("style","height: 100%; width: 100%;margin: 0px;min-width:90%;min-height:90%; left: 0px; top: 0px;");
+						//w.document.body.removeAttribute("class");
+						//var d=document.createElement("div");
+						//d.setAttribute("style","height: 100%; width: 100%; left: 0px; top: 0px;display: block;");
+						//d.appendChild(target);
+						////var js=document.querySelectorAll("script");
+						////for (var i=0, len=js.length; i<len ;i++){
+						////d.appendChild(js[i]);
+						////}
+						//w.document.body.appendChild(d);
+						w.document.body.appendChild(target);
+						var hd=document.head.cloneNode(true).querySelectorAll(":not(script)");
+						for (var i=0, len=hd.length; i<len ;i++){
+							w.document.head.appendChild(hd[i]);
+						}
+					}
+				},10);
 			}
 		}
 	}, false);
