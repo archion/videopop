@@ -4,7 +4,7 @@ Popup online video out of the webpage. I will try to make it support all sites i
 
 currently known unsupported website
 - youtube html5 player
-- acfun external player
+- sina video
 - ...
 
 Only tested in chrome
