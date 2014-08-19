@@ -3,7 +3,7 @@
 // @homepageURL https://github.com/archion/videopop
 // @namespace  https://github.com/archion/
 // @version    0.1.4
-// @description  Popup online video out of the website
+// @description  Popup online video out of the webpage
 // @match      http://*/*
 // @match      https://*/*
 // @copyright  2014+, archion

@@ -10,7 +10,7 @@ currently known unsupported website
 Only tested in chrome
 
 ## Setup
-There is two way to use this script. Since bookmarklet will affected by CSP,so the second one is recommended.
+There is two way to use this script. Since bookmarklet will affected by CSP, so the second one is recommended.
 ### as bookmarklet
 Just add 
 ```
