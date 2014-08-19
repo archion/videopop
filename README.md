@@ -1,6 +1,6 @@
 videopop
 ========
-Popup online video out of the website. I will try to make it support all sites.
+Popup online video out of the webpage. I will try to make it support all sites in a robust way.
 
 currently known unsupported website
 - youtube html5 player
