@@ -27,7 +27,7 @@ ck.addEventListener('click', function() {
 	//debugger;
 	var ntf=document.createElement("div");
 	ntf.id="topntf";
-	ntf.setAttribute("style","position: absolute; top: 0px; left: 0px;z-index: 2147483647; background: #000; opacity: 0.8;font-size: 50pt;line-height: 50pt;text-align: center;color:#fff; "+"width: "+document.body.offsetWidth+"px; "+"height: "+document.body.offsetHeight+"px; "+"padding-top: "+document.body.scrollTop+"px;");
+	ntf.setAttribute("style","position: absolute; top: 0px; left: 0px;z-index: 2147483647; background: #000; opacity: 0.8;font-size: 50pt;line-height: 50pt;text-align: center;color:#fff; "+"width: "+document.body.scrollWidth+"px; "+"height: "+document.body.scrollHeight+"px; "+"padding-top: "+document.body.scrollTop+"px;");
 	ntf.innerHTML="please click the element to pop out<br> 请点击需要弹出的元素";
 	document.body.appendChild(ntf);
 	document.addEventListener('mousedown', function(e) {
