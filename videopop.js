@@ -30,10 +30,10 @@ document.addEventListener('mousedown', function(e) {
 		//var target = e.target.cloneNode(true)
 		//var target = document.elementFromPoint(e.clientX,e.clientY).parentNode.cloneNode(true);
 		var target = document.elementFromPoint(e.clientX,e.clientY).cloneNode(true);
-		var wurl=window.location.href
-			if(ff){
-				wurl="about:blank";
-			}
+		var wurl=window.location.href;
+		if(ff){
+			wurl="about:blank";
+		}
 		var w=window.open(wurl,"","width=520,height=325");
 		if(!w){
 			window.alert("Please set to allow pop-up windows（请设置允许弹出窗口）");
@@ -62,12 +62,11 @@ document.addEventListener('mousedown', function(e) {
 					//target.style.margin="0px";
 					//target.style.padding="0px";
 					//w.document.body.removeAttribute("class");
-					target.setAttribute("style","height: 100%; width: 100%;margin: 0px;min-width:90%;min-height:90%; left: 0px; top: 0px;visibility : visible;");
-					target.style.display="";
-					target.id="none";
-					target.className="none";
-					w.document.body.className="none";
-					w.document.body.setAttribute("style","height: 100%; width: 100%;margin: 0px;padding: 0px;min-width:90%;min-height:90%; left: 0px; top: 0px;");
+					target.setAttribute("style","height: 100%; width: 100%;margin: 0px;min-width:90% !important;min-height:90% !important; left: 0px; top: 0px;visibility :visible;display :block");
+					//target.id="";
+					//target.className="vp";
+					//w.document.body.className="vp";
+					w.document.body.setAttribute("style","height: 100%; width: 100%;margin: 0px;padding: 0px;min-width:90% !important;min-height:90% !important; left: 0px; top: 0px;display :block");
 					//var d=document.createElement("div");
 					//d.setAttribute("style","height: 100%; width: 100%; left: 0px; top: 0px;display: block;");
 					//d.appendChild(target);
