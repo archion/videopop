@@ -1,5 +1,7 @@
 videopop
 ========
+弹出网页视频为独立窗口
+
 Popup online video out of the webpage. I will try to make it support all sites in a robust way.
 
 currently known unsupported website
@@ -10,7 +12,7 @@ currently known unsupported website
 Only tested in chrome
 
 ## Setup
-There is two way to use this script. Since bookmarklet will affected by CSP, so the second one is recommended.
+There are two ways to use this script. Since bookmarklet will affected by CSP, so the second one is recommended.
 ### as bookmarklet
 Just add 
 ```
@@ -26,4 +28,4 @@ If use bookmarklet, click the bookmark on a webpage and then click the video whi
 If use userscript, click the "popup" button in bottom right of the page and then the same as bookmarklet
 
 ---
-Any contribution as well as bug reports will be appreciated.  
+Any contribution as well as bug reports will be appreciated. 
