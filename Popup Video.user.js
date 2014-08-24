@@ -2,7 +2,7 @@
 // @name       Popup Video
 // @homepageURL https://github.com/archion/videopop
 // @namespace  https://github.com/archion/
-// @version    0.1.9
+// @version    0.1.10
 // @description  Popup online video out of the webpage
 // @match      http://*/*
 // @match      https://*/*
@@ -10,7 +10,7 @@
 // ==/UserScript==
 if (window.top != window.self) { return; }  //don't run on frames or iframes
 var ck=document.createElement("div");
-ck.setAttribute("style","position: fixed; bottom: 20px; right: 20px;z-index: 999999;background: #000; opacity: 0.5;color:#fff;font-size: 8pt;cursor: pointer;text-align: center;color:#fff;padding: 4px");
+ck.setAttribute("style","position: fixed; bottom: 5px; right: 20px;z-index: 999999;background: #000; opacity: 0.5;color:#fff;font-size: 8pt;cursor: pointer;text-align: center;color:#fff;padding: 4px");
 ck.innerHTML="Popup";
 document.body.appendChild(ck);
 ck.addEventListener('click', function() {
@@ -96,6 +96,11 @@ ck.addEventListener('click', function() {
 						//for (var i=0, len=hd.length; i<len ;i++){
 						//w.document.head.appendChild(hd[i]);
 						//}
+						var rt=document.createElement('script');
+						rt.type = "text/javascript";
+						rt.innerHTML='var ck=document.createElement("div"); ck.setAttribute("style","position: fixed; top: 5px; right: 10px;z-index: 999999;background: #000; opacity: 0.5;color:#fff;font-size: 8pt;cursor: pointer;text-align: center;color:#fff;padding: 4px"); ck.innerHTML="return"; ck.onclick=function() { window.open("'+window.location.href+'"); window.close(); };document.body.appendChild(ck);';
+						w.document.body.appendChild(rt);
+						window.close();
 					}
 				},100);
 			}

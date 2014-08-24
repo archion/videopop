@@ -80,6 +80,11 @@ document.addEventListener('mousedown', function(e) {
 					//for (var i=0, len=hd.length; i<len ;i++){
 					//w.document.head.appendChild(hd[i]);
 					//}
+					var rt=document.createElement('script');
+					rt.type = "text/javascript";
+					rt.innerHTML='var ck=document.createElement("div"); ck.setAttribute("style","position: fixed; top: 5px; right: 10px;z-index: 999999;background: #000; opacity: 0.3;color:#fff;font-size: 8pt;cursor: pointer;text-align: center;color:#fff;padding: 4px"); ck.innerHTML="return"; ck.onclick=function() { window.open("'+window.location.href+'"); window.close(); };document.body.appendChild(ck);';
+					w.document.body.appendChild(rt);
+					window.close();
 				}
 			},100);
 		}
