@@ -64,9 +64,9 @@ document.addEventListener('mousedown', function(e) {
 					//w.document.body.removeAttribute("class");
 					target.id="archion";
 					target.className="archion";
-					target.setAttribute("style","height: 100% !important; width: 100% !important;margin: 0px;min-width:90% !important;min-height:90% !important; left: 0px; top: 0px;visibility :visible !important;display :block !important");
+					target.setAttribute("style","height: 100% !important; width: 100% !important;margin: 0px !important;min-width:90% !important;min-height:90% !important; left: 0px !important; top: 0px !important;visibility :visible !important;display :block !important");
 					//w.document.body.className="vp";
-					w.document.body.setAttribute("style","height: 100% !important; width: 100% !important;margin: 0px;padding: 0px;min-width:90% !important;min-height:90% !important; left: 0px; top: 0px;display :block !important");
+					w.document.body.setAttribute("style","height: 100% !important; width: 100% !important;margin: 0px !important;padding: 0px !important;min-width:90% !important;min-height:90% !important; left: 0px !important; top: 0px !important;display :block !important");
 					//var d=document.createElement("div");
 					//d.setAttribute("style","height: 100%; width: 100%; left: 0px; top: 0px;display: block;");
 					//d.appendChild(target);
