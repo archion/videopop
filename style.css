@@ -17,13 +17,13 @@ h1 {
 div.content {
 	background: #fff;
 	//position: fixed;
-	//position: absolute;
+	position: relative;
 	//left: 10%;
 	//right: 10%;
 	padding: 10px;
-	-moz-box-shadow: 2px 2px 10px #909090;
-	-webkit-box-shadow: 2px 2px 10px #909090;
-	box-shadow: 2px 2px 10px #909090;
+	-moz-box-shadow: 0px 0px 5px #909090;
+	-webkit-box-shadow: 0px 0px 5px #909090;
+	box-shadow: 0px 0px 5px #909090;
 }
 div.content img {
 	-moz-box-shadow: 2px 2px 10px #909090;
@@ -33,6 +33,22 @@ div.content img {
 	max-height: 80%;
 	display: block;
 	margin: 10px auto;
+}
+div.content:after {
+	content:"";
+	position:absolute;
+	z-index:-1;
+	bottom:10px;
+	right:10px;
+	width:50%;
+	height:10%;
+	-moz-box-shadow: 0px 0px 10px #909090;
+	-webkit-box-shadow: 0px 0px 10px #909090;
+	box-shadow: 0px 10px 10px #909090;
+	-webkit-transform:rotate(2deg);
+	-moz-transform:rotate(2deg);
+	-o-transform:rotate(2deg);
+	transform:rotate(2deg);
 }
 p {
 	line-height: 200%;
