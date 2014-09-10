@@ -70,7 +70,7 @@ ck.addEventListener('click', function() {
 			}else{
 				//w.window.location.href=window.location.href;
 				var id=window.setInterval(function(){
-					if(w.document.body.childElementCount>1||wurl=="about:blank"){
+					if(w.document.body.childElementCount>0||wurl=="about:blank"){
 						window.clearInterval(id);
 						//w.document.write('<script type="text/undefined">');
 						//w.document.documentElement.replaceChild(document.head.cloneNode(true),w.document.head);
