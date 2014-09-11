@@ -35,7 +35,10 @@ ck.addEventListener('click', function() {
 	//}
 	var ntf=document.createElement("div");
 	ntf.id="topntf";
-	ntf.setAttribute("style","position: absolute; top: 0px; left: 0px;z-index: 2147483647; background-color: #000; opacity: 0.8;font-size: 50pt;line-height: 50pt;text-align: center;color:#fff; "+"width: "+document.documentElement.scrollWidth+"px; "+"height: "+document.documentElement.scrollHeight+"px; "+"padding-top: "+document.body.scrollTop+"px;");
+	var pw=document.documentElement.scrollWidth||document.body.scrollWidth;
+	var ph=document.documentElement.scrollHeight||document.body.scrollHeight;
+	var ptop=document.documentElement.scrollTop||document.body.scrollTop;
+	ntf.setAttribute("style","position: absolute; top: 0px; left: 0px;z-index: 2147483647; background-color: #000; opacity: 0.8;font-size: 50pt;line-height: 50pt;text-align: center;color:#fff; "+"width: "+pw+"px; "+"height: "+ph+"px; "+"padding-top: "+ptop+"px;");
 	ntf.innerHTML="please click the element to pop out<br> 请点击需要弹出的元素";
 	document.body.appendChild(ntf);
 	document.addEventListener('mousedown', function(e) {
