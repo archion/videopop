@@ -18,7 +18,7 @@ if(ff){
 //}
 var ntf=document.createElement("div");
 ntf.id="topntf";
-ntf.setAttribute("style","position: absolute; top: 0px; left: 0px;z-index: 2147483647; background-color: #000; opacity: 0.8;font-size: 50pt;line-height: 50pt;text-align: center;color:#fff; "+"width: "+document.body.scrollWidth+"px; "+"height: "+document.body.scrollHeight+"px; "+"padding-top: "+document.body.scrollTop+"px;");
+ntf.setAttribute("style","position: absolute; top: 0px; left: 0px;z-index: 2147483647; background-color: #000; opacity: 0.8;font-size: 50pt;line-height: 50pt;text-align: center;color:#fff; "+"width: "+document.documentElement.scrollWidth+"px; "+"height: "+document.documentElement.scrollHeight+"px; "+"padding-top: "+document.body.scrollTop+"px;");
 ntf.innerHTML="please click the element to pop out<br> 请点击需要弹出的元素";
 document.body.appendChild(ntf);
 document.addEventListener('mousedown', function(e) {
@@ -34,7 +34,7 @@ document.addEventListener('mousedown', function(e) {
 		var cw=window.getComputedStyle(target,null).getPropertyValue("width");
 		var ptarget=target;
 		var player = ptarget.cloneNode(true);
-		var cst="width:100% !important;height:100% !important;max-width:100% !important;margin:0px !important;padding:0px !important;top:0px !important;left:0px !important;z-index:10000 !important;overflow:hidden !important;position:fixed !important;display: block !important;visibility: visible !important;";
+		var cst="width:100% !important;height:100% !important;max-width:100% !important;margin:0px !important;padding:0px !important;top:0px !important;left:0px !important;z-index: 2147483646 !important;overflow:hidden !important;position:fixed !important;display: block !important;visibility: visible !important;";
 		player.setAttribute("style",cst);
 		while(window.getComputedStyle(target.parentNode,null).getPropertyValue("height")==ch&&window.getComputedStyle(target.parentNode,null).getPropertyValue("width")==cw) {
 			ptarget=target.parentNode.cloneNode(true);
@@ -95,7 +95,7 @@ document.addEventListener('mousedown', function(e) {
 					w.document.body.appendChild(player);
 					var rt=document.createElement('script');
 					rt.type = "text/javascript";
-					rt.innerHTML='var ck=document.createElement("div"); ck.setAttribute("style","position: fixed; top: 5px; right: 10px;z-index: 999999;background: #000; opacity: 0.3;color:#fff;font-size: 8pt;cursor: pointer;text-align: center;color:#fff;padding: 4px"); ck.innerHTML="return"; ck.onclick=function() { window.open("'+window.location.href+'"); window.close(); };document.body.appendChild(ck);';
+					rt.innerHTML='var ck=document.createElement("div"); ck.setAttribute("style","position: fixed; top: 5px; right: 10px;z-index: 2147483647;background: #000; opacity: 0.3;color:#fff;font-size: 8pt;cursor: pointer;text-align: center;color:#fff;padding: 4px"); ck.innerHTML="return"; ck.onclick=function() { window.open("'+window.location.href+'"); window.close(); };document.body.appendChild(ck);';
 					w.document.body.appendChild(rt);
 					//if (confirm("close original window?\n关闭原始窗口？") == true) {
 					//window.close();
