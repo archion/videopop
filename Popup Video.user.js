@@ -67,7 +67,8 @@ ck.addEventListener('click', function() {
 			if(ff){
 				wurl="about:blank";
 			}
-			var w=window.open(wurl,"","width=520,height=325");
+			//var w=window.open(wurl,"","width=520,height=325");
+			var w=window.open(wurl,"","width=520,height=325,left="+(screen.availWidth-525)+",top="+(screen.availHeight-385));
 			if(!w){
 				window.alert("Please set to allow pop-up windows（请设置允许弹出窗口）");
 			}else{
