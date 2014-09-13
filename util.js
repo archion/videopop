@@ -16,7 +16,7 @@ tp.addEventListener('click',function(e){
 		if((document.body.scrollTop||document.documentElement.scrollTop)==0){
 			return;
 		}else{
-			scroll(0,(document.body.scrollTop||document.documentElement.scrollTop)-15);
+			scroll(0,(document.body.scrollTop||document.documentElement.scrollTop)*0.9);
 			setTimeout(sm,0.1);
 		}
 	};
