@@ -1,3 +1,4 @@
+//add img link and make link open in new tab
 var i=0;
 var img=document.querySelectorAll("img")
 for (i=0;i<img.length;i++){
@@ -10,7 +11,12 @@ var link=document.querySelectorAll("a");
 for (i=0;i<link.length;i++){
 	link[i].setAttribute("target","_blank")
 }
-var tp=document.querySelector("span.top")
+//add back to top button
+var tp=document.createElement("span");
+tp.className="fa fa-chevron-circle-up fa-2x top";
+tp.setAttribute("style","cursor: pointer; opacity:0; position: fixed; right: 40px; bottom: 25px; transition: opacity 0.7s;");
+document.body.appendChild(tp);
+//var tp=document.querySelector("span.top")
 tp.addEventListener('click',function(e){
 	var sm=function(){
 		if((document.body.scrollTop||document.documentElement.scrollTop)==0){
