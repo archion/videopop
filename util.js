@@ -24,7 +24,7 @@ tp.addEventListener('click',function(e){
 },false)
 window.onscroll=function(){
 	if((document.body.scrollTop||document.documentElement.scrollTop)>window.innerHeight/2){
-		document.querySelector("i.top").style.opacity=1;
+		document.querySelector("i.top").style.opacity=0.8;
 		document.querySelector("i.top").style.cursor="pointer";
 	}else{
 		document.querySelector("i.top").style.opacity=0;
