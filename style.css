@@ -71,7 +71,7 @@ div.content img {
 	display: block;
 	margin: 10px auto;
 }
-i.top{
+span.top{
 	cursor: pointer;
 	opacity:0;
 	position: fixed;

@@ -10,7 +10,7 @@ var link=document.querySelectorAll("a");
 for (i=0;i<link.length;i++){
 	link[i].setAttribute("target","_blank")
 }
-var tp=document.querySelector("i.top")
+var tp=document.querySelector("span.top")
 tp.addEventListener('click',function(e){
 	var sm=function(){
 		if((document.body.scrollTop||document.documentElement.scrollTop)==0){
@@ -24,10 +24,10 @@ tp.addEventListener('click',function(e){
 },false)
 window.onscroll=function(){
 	if((document.body.scrollTop||document.documentElement.scrollTop)>window.innerHeight/2){
-		document.querySelector("i.top").style.opacity=0.8;
-		document.querySelector("i.top").style.cursor="pointer";
+		document.querySelector("span.top").style.opacity=0.8;
+		document.querySelector("span.top").style.cursor="pointer";
 	}else{
-		document.querySelector("i.top").style.opacity=0;
-		document.querySelector("i.top").style.cursor="initial";
+		document.querySelector("span.top").style.opacity=0;
+		document.querySelector("span.top").style.cursor="initial";
 	}
 }
