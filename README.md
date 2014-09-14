@@ -1,6 +1,6 @@
 videopop
 ========
-弹出网页视频为独立窗口
+弹出网页视频为独立窗口，中文介绍[见此](http://archion.github.io/videopop/)
 
 Popup online video out of the webpage. I will try to make it support all sites in a robust way.
 
