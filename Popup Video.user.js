@@ -11,7 +11,7 @@
 // ==/UserScript==
 if (window.top != window.self) { return; }  //don't run on frames or iframes
 var ck=document.createElement("div");
-ck.setAttribute("style","position: fixed; bottom: 5px; right: 10px;z-index: 2147483646;background: #000; opacity: 0.5;color:#fff;font-size: 8pt;cursor: pointer;text-align: center;color:#fff;padding: 4px");
+ck.setAttribute("style","position: fixed; bottom: 5px; right: 10px;z-index: 2147483646;background: #000; opacity: 0.5;color:#fff;font-size: 1em;cursor: pointer;text-align: center;color:#fff;padding: 4px");
 ck.innerHTML="Popup";
 document.body.appendChild(ck);
 ck.addEventListener('click', function() {
